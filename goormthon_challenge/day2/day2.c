@@ -21,15 +21,16 @@ int main()
             exit(1);
     }
 
-    M = M + min % 60;
-    if (M > 59)
+    M += min % 60;
+    T += min / 60;
+
+    if (M >= 60)
     {
-        T++;
-        M -= 60;
+        T += M / 60;
+        M %= 60;
     }
 
-    T = T + min / 60;
-    if (T > 23)
+    if (T >= 24)
         T %= 24;
 
     printf("%d %d", T, M);
