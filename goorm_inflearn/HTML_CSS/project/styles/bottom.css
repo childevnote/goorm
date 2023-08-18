@@ -1,23 +1,40 @@
 .main-bottom {
     z-index: 200;
-    position: fixed;
-    top: 60%;
+    position: absolute;
+    top: 65%;
     left: 0;
     right: 0;
     width: 100%;
+    height: 50%;
     background-color: black;
-    opacity: 0.7;
-    padding-bottom: 20%;
+    padding-bottom: 25%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0) 1%,
+            rgba(0, 0, 0, 0.85) 4%,
+            rgba(0, 0, 0, 0.95) 20%,
+            rgba(0, 0, 0, 1) 100%);
 }
 
-.netflix-originals, 
+.netflix-originals,
 .trending-now {
     font-size: 20px;
     font-weight: bold;
-    margin-left: 20px;
+    margin: 30px 0 0 20px;
 }
 
-.content-poster{
+.content-poster {
     width: 100px;
-    margin: 10px 20px 10px 20px;
+    margin: 30px 20px 10px 20px;
+}
+
+.main-bottom img {
+    transition: transform 1s ease-out;
+}
+
+.main-bottom img:hover {
+    transform: scale(1.4);
 }
