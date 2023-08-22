@@ -36,7 +36,7 @@
 .side-menu-user-info a {
     font-size: 14px;
     font-weight: 500;
-    color: #262626;
+    color: var(--text-dark);
     text-decoration: none;
     text-transform: lowercase;
     overflow: hidden;
@@ -46,7 +46,7 @@
 .side-menu-user-info span {
     font-size: 14px;
     font-weight: 400;
-    color: #999999;
+    color: var(--text-light);
     max-width: 180px;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -75,7 +75,7 @@
 .side-menu-suggestion-header h2{
     font-size: 14px;
     font-weight: 500;
-    color: #999999;
+    color: var(--text-light);
 }
 
 .side-menu-suggestion-header button {
@@ -84,7 +84,7 @@
     cursor: pointer;
     font-size: 12px;
     font-weight: 500;
-    color: #262626;
+    color: var(--text-dark);
 }
 
 .side-menu-suggestion-content{
@@ -121,7 +121,7 @@
 .side-menu-suggestion-info a {
     font-size: 14px;
     font-weight: 500;
-    color: #262626;
+    color: var(--text-dark);
     text-decoration: none;
     text-transform: lowercase;
     max-width: 180px;
@@ -137,7 +137,7 @@
 .side-menu-suggestion-info span {
     font-size: 12px;
     font-weight: 400;
-    color: #999999;
+    color: var(--text-light);
     max-width: 180px;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -162,7 +162,7 @@
 
 .side-menu-footer-list {
     display: flex;
-    color: #999999;
+    color: var(--text-light);
     font-size: 14px;
     font-weight: 500;
     max-width: 180px;
@@ -173,7 +173,7 @@
 .side-menu-footer span {
     font-size: 12px;
     font-weight: 400;
-    color: #999999;
+    color: var(--text-light);
     white-space: nowrap;
 }
 
